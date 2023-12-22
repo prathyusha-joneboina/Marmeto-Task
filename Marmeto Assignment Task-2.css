@@ -1,0 +1,240 @@
+* {
+    font-family: "Inter", sans-serif;
+}
+
+.tab.active span {
+    display: inline-flex;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 5px 31px;
+    background: #f2f2f2;
+    display: inline-block;
+    font-size: 8px;
+    margin-bottom: 20px;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+}
+
+.tab.active {
+    background-color: black;
+    color: white;
+    border-radius: 2px;
+}
+
+.tab.active span {
+    margin-right: 4px;
+}
+
+.product-container {
+    display: none;
+}
+
+.product-container.active {
+    display: flex;
+    margin-top: 16px;
+    gap: 20px;
+}
+
+.productContainer {
+    width: 18%;
+    position: relative;
+}
+
+p.badge_text {
+    position: absolute;
+    top: 2px;
+    color: black;
+    background-color: white;
+    padding: 1px;
+    min-width: 45px;
+    left: 7px;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.productContainer img.product-image {
+    width: 90%;
+    height: 100%;
+    aspect-ratio: 70 / 50;
+    object-fit: initial;
+    border-radius: 2px;
+}
+
+.tab.active {
+    font-family: "Inter", sans-serif;
+}
+
+span.product_title_name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 80%;
+    display: inline-block;
+    font-weight: 550;
+    margin-bottom: 10px;
+}
+
+h1.main_heading {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+}
+
+div#tabs {
+    display: flex;
+    justify-content: center;
+}
+
+.productContainer h3 {
+    font-weight: 600;
+
+    margin-top: 3px;
+}
+
+span.product_vender {
+    color: #000;
+
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 60px;
+    margin-bottom: 8px;
+}
+
+span.dot {
+    margin-bottom: 16px;
+    margin-right: 6px;
+}
+
+.productContainer h3 {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.productContainer p {
+    margin-top: 1px;
+}
+
+p.badge_text {
+    font-family: "Inter", sans-serif;
+}
+
+p.product_price {
+    color: #000;
+
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+s.compared_price {
+    color: #8f8f8f;
+    margin-left: 4px;
+}
+
+span.discount_percentage {
+    color: #ff3737;
+
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.discount_percentage {
+    margin-left: 4px;
+}
+
+button.add_to_card {
+    color: #fff;
+
+    border-radius: 2px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    background-color: black;
+    border: none;
+    width: 100%;
+    padding: 8px 10px 8px 10px;
+}
+
+
+button.add_to_card,
+span.discount_percentage,
+p.product_price,
+span.product_vender {
+    font-size: 6px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    button.add_to_card,
+    span.discount_percentage,
+    p.product_price,
+    span.product_vender {
+        font-size: 10px;
+    }
+
+    .tab {
+        font-size: 20px;
+    }
+
+    .tab.active svg {
+        height: 17px;
+        width: 18px;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .tab.active svg {
+        height: 17px;
+        width: 18px;
+    }
+
+    .productContainer h3 {
+        line-height: 20px;
+    }
+
+    button.add_to_card,
+    span.discount_percentage,
+    p.product_price,
+    span.product_vender {
+        font-size: 13px;
+    }
+
+    .tab {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .product-container.active {
+        display: flex;
+        margin-top: 16px;
+        gap: 6px;
+    }
+
+    .productContainer {
+        font-size: 8px;
+    }
+
+    .productContainer img.product-image {
+        aspect-ratio: 70 / 27;
+        object-fit: initial;
+    }
+
+    .productContainer {
+        width: 23%;
+    }
+
+    .productContainer h3 {
+        font-size: 8px;
+    }
+}
